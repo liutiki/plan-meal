@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body{
+  background: url('bread.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  background-color: #A86464;
+  border-radius:20px;
+  padding:15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button-add{
+  background-color: #76BA99;
+  padding:10px;
+  border-radius:20px;
+  border:none;
+  font-size:16px;
+  width:120px;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+}
+
+.button-delete{
+  background:none;
+  border:0;
+  color:red;
+  font-family: "Playfair Display", serif;
+}
+
+.App{
+  display:flex;
+  justify-content: space-around;
+}
+
+.whole-plan{
+  width:70%;
+  height:100vh;
+}
+
+.myInput{
+  width:50%;
+  height:20px;
+  padding:10px;
+  border-radius:20px;
+  display:block;
+  margin-top:30px;
+}
+
+textarea{
+display:block;
+border:1px solid #ddd;
+margin-top:30px;
+width:50%;
+height:200px;
+border-radius: 20px;
+padding:10px;
+}
+
+.selected{
+  background-color:#B3E5BE;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .default{
+    background-color:#F5FFC9;
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    font-weight: bold;
   }
-  to {
-    transform: rotate(360deg);
+
+  .field{
+    font-size:13px;
+    
   }
+
+
+  @media all and (max-width: 500px) {
+
+  .App{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+ 
+body{
+  background-color: #A86464;
+}
+
+.myInput{
+  width:90%;
+  height:20px;
+  padding:10px;
+  border-radius:20px;
+  display:block;
+  margin-top:5px;
+}
+
+textarea{
+display:block;
+border:1px solid #ddd;
+margin-top:5px;
+width:90%;
+height:110px;
+border-radius: 20px;
+padding:10px;
+}
+
 }
